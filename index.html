@@ -375,6 +375,49 @@
             font-size: 0.95rem;
         }
 
+        /* Contact Section */
+        .contact-card {
+            background: var(--surface-light);
+            border: 1px solid var(--border);
+            border-left: 3px solid var(--accent-gold);
+            border-radius: 12px;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-info {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .contact-label {
+            font-weight: 600;
+            color: var(--text-primary);
+            min-width: 120px;
+            font-size: 0.95rem;
+        }
+
+        .contact-value {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+        }
+
+        .contact-value a {
+            color: var(--accent-cyan);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-value a:hover {
+            color: var(--text-primary);
+        }
+
         /* Footer */
         footer {
             padding: 3rem 0;
@@ -414,6 +457,16 @@
             .metric-value {
                 font-size: 2.5rem;
             }
+
+            .contact-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+
+            .contact-label {
+                min-width: auto;
+            }
         }
 
         @media (max-width: 480px) {
@@ -438,8 +491,8 @@
                     <p class="role">Full Stack Developer • AI & Machine Learning Engineer</p>
                 </div>
                 <div class="header-links">
-                    <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-                    <a href="https://github.com" target="_blank">GitHub</a>
+                    <a href="https://www.linkedin.com/in/rashaan-morris-25624595/" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/masterplox/" target="_blank">GitHub</a>
                 </div>
             </div>
         </header>
@@ -449,6 +502,25 @@
             <p class="hero-intro">
                 I build <strong>large-scale, intelligent software systems</strong> that combine modern web engineering, cloud architecture, and applied machine learning. With <strong>7+ years</strong> delivering enterprise platforms and a recent <strong>MSc in AI & Big Data</strong>, my work sits at the intersection of software reliability, data intelligence, and real-world impact.
             </p>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="section">
+            <div class="section-header">
+                <h2 class="section-title">Contact Information</h2>
+            </div>
+            <div class="contact-card">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-label">Full Name:</span>
+                        <span class="contact-value">Rashaan Morris</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Email:</span>
+                        <span class="contact-value"><a href="mailto:rashaanmorris18@gmail.com">rashaanmorris18@gmail.com</a></span>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Projects -->
